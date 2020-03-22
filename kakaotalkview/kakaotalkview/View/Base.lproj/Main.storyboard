@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="kakaotalkview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ggB-nO-30r">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="615"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Rjj-B9-XL8">
+                                <rect key="frame" x="0.0" y="623" width="375" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zd7-Js-Sct">
+                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="34"/>
+                                        <state key="normal" title="+"/>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KLR-5s-S1E">
+                                        <rect key="frame" x="53.5" y="0.0" width="268" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6m-M4-IEg">
+                                        <rect key="frame" x="321.5" y="0.0" width="53.5" height="34"/>
+                                        <state key="normal" title="보내기"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="T6m-M4-IEg" firstAttribute="width" secondItem="zd7-Js-Sct" secondAttribute="width" id="RXm-si-qSl"/>
+                                    <constraint firstItem="KLR-5s-S1E" firstAttribute="height" secondItem="zd7-Js-Sct" secondAttribute="height" id="SlK-9D-WfW"/>
+                                    <constraint firstItem="T6m-M4-IEg" firstAttribute="height" secondItem="zd7-Js-Sct" secondAttribute="height" id="oxN-c4-5Sc"/>
+                                    <constraint firstItem="KLR-5s-S1E" firstAttribute="width" secondItem="zd7-Js-Sct" secondAttribute="width" multiplier="5:1" id="xJp-79-KHQ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ggB-nO-30r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1FS-li-TbU"/>
+                            <constraint firstItem="Rjj-B9-XL8" firstAttribute="top" secondItem="ggB-nO-30r" secondAttribute="bottom" constant="8" symbolic="YES" id="4CY-fQ-agh"/>
+                            <constraint firstItem="ggB-nO-30r" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Bhn-Lb-LwA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rjj-B9-XL8" secondAttribute="bottom" constant="10" id="U5k-ru-F6s"/>
+                            <constraint firstItem="ggB-nO-30r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bo2-CG-5So"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rjj-B9-XL8" secondAttribute="trailing" id="qnU-dF-zHl"/>
+                            <constraint firstItem="Rjj-B9-XL8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ztV-UP-CM7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="ggB-nO-30r" id="G0o-UQ-NM3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>

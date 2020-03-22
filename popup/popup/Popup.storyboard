@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pop Up View Controller-->
+        <scene sceneID="rrD-WC-fE8">
+            <objects>
+                <viewController storyboardIdentifier="PopupViewController" id="vy7-kD-HQ1" customClass="PopUpViewController" customModule="popup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PKs-W6-O15">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bce-KQ-fNU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qmo-nn-3OE">
+                                <rect key="frame" x="40" y="224" width="334" height="448"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPM-fU-nu4">
+                                        <rect key="frame" x="20" y="398" width="68.666666666666671" height="30"/>
+                                        <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="닫기"/>
+                                        <connections>
+                                            <action selector="dismiss:" destination="vy7-kD-HQ1" eventType="touchUpInside" id="X3L-rz-rCA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4V-SM-B6Y">
+                                        <rect key="frame" x="108.66666666666664" y="398" width="205.33333333333337" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="자세히 보기"/>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup.png" translatesAutoresizingMaskIntoConstraints="NO" id="4zK-50-me7">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="378"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="378" id="kR6-9K-ThU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Oa-wd-zfy">
+                                        <rect key="frame" x="296" y="8" width="30" height="30"/>
+                                        <state key="normal" title="X"/>
+                                        <connections>
+                                            <action selector="dismiss:" destination="vy7-kD-HQ1" eventType="touchUpInside" id="GET-fb-fTj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="4zK-50-me7" firstAttribute="top" secondItem="qmo-nn-3OE" secondAttribute="top" id="0uC-jE-SXL"/>
+                                    <constraint firstAttribute="bottom" secondItem="PPM-fU-nu4" secondAttribute="bottom" constant="20" id="1Da-em-Sj3"/>
+                                    <constraint firstItem="9Oa-wd-zfy" firstAttribute="top" secondItem="qmo-nn-3OE" secondAttribute="top" constant="8" id="FHM-Bf-E0q"/>
+                                    <constraint firstAttribute="bottom" secondItem="X4V-SM-B6Y" secondAttribute="bottom" constant="20" id="ILU-EX-t5s"/>
+                                    <constraint firstItem="PPM-fU-nu4" firstAttribute="leading" secondItem="qmo-nn-3OE" secondAttribute="leading" constant="20" id="L6L-gY-BFo"/>
+                                    <constraint firstAttribute="trailing" secondItem="X4V-SM-B6Y" secondAttribute="trailing" constant="20" id="MAa-nn-BO0"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Oa-wd-zfy" secondAttribute="trailing" constant="8" id="PjS-IN-WFI"/>
+                                    <constraint firstItem="PPM-fU-nu4" firstAttribute="top" secondItem="4zK-50-me7" secondAttribute="bottom" constant="20" id="UEq-SG-Q3b"/>
+                                    <constraint firstItem="X4V-SM-B6Y" firstAttribute="width" secondItem="PPM-fU-nu4" secondAttribute="width" multiplier="3:1" id="VSS-jX-U1R"/>
+                                    <constraint firstAttribute="trailing" secondItem="4zK-50-me7" secondAttribute="trailing" id="Wnl-qD-nW4"/>
+                                    <constraint firstItem="4zK-50-me7" firstAttribute="leading" secondItem="qmo-nn-3OE" secondAttribute="leading" id="bAc-4E-mJc"/>
+                                    <constraint firstItem="PPM-fU-nu4" firstAttribute="baseline" secondItem="X4V-SM-B6Y" secondAttribute="baseline" id="lbU-RE-MtI"/>
+                                    <constraint firstItem="X4V-SM-B6Y" firstAttribute="leading" secondItem="PPM-fU-nu4" secondAttribute="trailing" constant="20" id="qay-km-BjX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3yu-Pj-Ouy" firstAttribute="trailing" secondItem="qmo-nn-3OE" secondAttribute="trailing" constant="40" id="5g1-1T-Oo8"/>
+                            <constraint firstItem="Bce-KQ-fNU" firstAttribute="top" secondItem="3yu-Pj-Ouy" secondAttribute="top" id="6fb-mP-vhX"/>
+                            <constraint firstItem="Bce-KQ-fNU" firstAttribute="leading" secondItem="3yu-Pj-Ouy" secondAttribute="leading" id="KLd-HT-TDe"/>
+                            <constraint firstItem="Bce-KQ-fNU" firstAttribute="trailing" secondItem="3yu-Pj-Ouy" secondAttribute="trailing" id="MOy-ov-2bB"/>
+                            <constraint firstItem="qmo-nn-3OE" firstAttribute="centerY" secondItem="PKs-W6-O15" secondAttribute="centerY" id="Mcz-1s-uet"/>
+                            <constraint firstItem="qmo-nn-3OE" firstAttribute="centerX" secondItem="PKs-W6-O15" secondAttribute="centerX" id="Xqe-jx-RYO"/>
+                            <constraint firstItem="Bce-KQ-fNU" firstAttribute="bottom" secondItem="3yu-Pj-Ouy" secondAttribute="bottom" id="iC1-uQ-0fq"/>
+                            <constraint firstItem="qmo-nn-3OE" firstAttribute="leading" secondItem="3yu-Pj-Ouy" secondAttribute="leading" constant="40" id="trk-ak-JQi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3yu-Pj-Ouy"/>
+                    </view>
+                    <connections>
+                        <outlet property="popupCenterY" destination="Mcz-1s-uet" id="L7Z-iY-qeC"/>
+                        <outlet property="popupImage" destination="4zK-50-me7" id="wC9-Oz-dJH"/>
+                        <outlet property="popupImageHeight" destination="kR6-9K-ThU" id="QYp-P0-eLA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h9q-ID-Fy2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="-264.50892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="popup.png" width="266" height="249"/>
+    </resources>
+</document>

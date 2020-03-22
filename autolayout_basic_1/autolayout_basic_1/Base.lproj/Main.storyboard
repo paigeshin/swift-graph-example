@@ -10,7 +10,6 @@
         <!--View Controller-->
         <scene sceneID="bKT-HI-qw5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jRL-dP-eRQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="3cy-jy-5fE" customClass="ViewController" customModule="autolayout_basic_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q4m-mD-Mia">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -117,6 +116,7 @@
                         <segue destination="lbX-UQ-lBa" kind="show" id="puq-g9-wUw"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jRL-dP-eRQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="988.40579710144937" y="134.59821428571428"/>
         </scene>

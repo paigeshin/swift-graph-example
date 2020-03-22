@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Popup View Controller-->
+        <scene sceneID="FGB-D4-3EP">
+            <objects>
+                <viewController storyboardIdentifier="PopupViewController" id="Ueb-jZ-dIc" customClass="PopupViewController" customModule="popup_practice1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2GZ-fl-5yo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W7J-f9-azz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="kFV-v9-QbO">
+                                <rect key="frame" x="32" y="168" width="350" height="560"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup.png" translatesAutoresizingMaskIntoConstraints="NO" id="5uS-EM-grj">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="498"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ies-eH-Shr">
+                                        <rect key="frame" x="16" y="514" width="75.5" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="닫기"/>
+                                        <connections>
+                                            <action selector="dismiss:" destination="Ueb-jZ-dIc" eventType="touchUpInside" id="hsq-Pn-2CP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vro-xS-cEq">
+                                        <rect key="frame" x="107.5" y="514" width="226.5" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="자세히 보기"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asc-yH-5DP">
+                                        <rect key="frame" x="312" y="8" width="30" height="30"/>
+                                        <state key="normal" title="X"/>
+                                        <connections>
+                                            <action selector="dismiss:" destination="Ueb-jZ-dIc" eventType="touchUpInside" id="iJ1-bZ-IT4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="ies-eH-Shr" firstAttribute="top" secondItem="5uS-EM-grj" secondAttribute="bottom" constant="16" id="4ex-g2-0NG"/>
+                                    <constraint firstAttribute="trailing" secondItem="Asc-yH-5DP" secondAttribute="trailing" constant="8" id="9Uk-d5-lFk"/>
+                                    <constraint firstItem="5uS-EM-grj" firstAttribute="top" secondItem="kFV-v9-QbO" secondAttribute="top" id="FhV-MD-cNr"/>
+                                    <constraint firstItem="vro-xS-cEq" firstAttribute="leading" secondItem="ies-eH-Shr" secondAttribute="trailing" constant="16" id="ZA9-gN-z2a"/>
+                                    <constraint firstAttribute="bottom" secondItem="vro-xS-cEq" secondAttribute="bottom" constant="16" id="cie-Et-ocB"/>
+                                    <constraint firstItem="ies-eH-Shr" firstAttribute="leading" secondItem="kFV-v9-QbO" secondAttribute="leading" constant="16" id="if1-cc-peH"/>
+                                    <constraint firstAttribute="bottom" secondItem="ies-eH-Shr" secondAttribute="bottom" constant="16" id="jIV-V5-fXN"/>
+                                    <constraint firstItem="vro-xS-cEq" firstAttribute="width" secondItem="ies-eH-Shr" secondAttribute="width" multiplier="3:1" id="l0m-aC-GDf"/>
+                                    <constraint firstItem="5uS-EM-grj" firstAttribute="leading" secondItem="kFV-v9-QbO" secondAttribute="leading" id="lzP-ST-Ogc"/>
+                                    <constraint firstAttribute="trailing" secondItem="vro-xS-cEq" secondAttribute="trailing" constant="16" id="rNN-dn-TuQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="5uS-EM-grj" secondAttribute="trailing" id="w3u-gH-2pN"/>
+                                    <constraint firstItem="Asc-yH-5DP" firstAttribute="top" secondItem="kFV-v9-QbO" secondAttribute="top" constant="8" id="wgt-hk-n4w"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="W7J-f9-azz" firstAttribute="top" secondItem="Vre-P3-02P" secondAttribute="top" constant="-44" id="68f-ra-RZz"/>
+                            <constraint firstItem="kFV-v9-QbO" firstAttribute="centerX" secondItem="2GZ-fl-5yo" secondAttribute="centerX" id="8no-rm-I0c"/>
+                            <constraint firstItem="kFV-v9-QbO" firstAttribute="leading" secondItem="Vre-P3-02P" secondAttribute="leading" constant="32" id="DbC-bX-KfJ"/>
+                            <constraint firstAttribute="bottom" secondItem="W7J-f9-azz" secondAttribute="bottom" id="LPW-8A-cLT"/>
+                            <constraint firstItem="W7J-f9-azz" firstAttribute="leading" secondItem="Vre-P3-02P" secondAttribute="leading" id="Mug-8Y-VLt"/>
+                            <constraint firstItem="W7J-f9-azz" firstAttribute="trailing" secondItem="Vre-P3-02P" secondAttribute="trailing" id="dnO-WH-NEC"/>
+                            <constraint firstItem="W7J-f9-azz" firstAttribute="top" secondItem="Vre-P3-02P" secondAttribute="top" constant="-44" id="jXH-ZZ-rmA"/>
+                            <constraint firstItem="kFV-v9-QbO" firstAttribute="centerY" secondItem="2GZ-fl-5yo" secondAttribute="centerY" id="o6q-MH-FZe"/>
+                            <constraint firstItem="Vre-P3-02P" firstAttribute="trailing" secondItem="kFV-v9-QbO" secondAttribute="trailing" constant="32" id="tAK-W0-wS8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vre-P3-02P"/>
+                    </view>
+                    <connections>
+                        <outlet property="centerY" destination="o6q-MH-FZe" id="w3R-XJ-T5E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="84q-OY-5gB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-43.478260869565219" y="81.026785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="popup.png" width="266" height="249"/>
+    </resources>
+</document>

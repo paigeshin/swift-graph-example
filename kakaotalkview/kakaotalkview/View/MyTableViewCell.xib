@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyTableViewCell" rowHeight="86" id="KGk-i7-Jjw" customClass="MyTableViewCell" customModule="kakaotalkview" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="86"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meBubble" translatesAutoresizingMaskIntoConstraints="NO" id="EY3-qW-Jbf">
+                        <rect key="frame" x="336" y="10" width="71" height="66"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" text="hello " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIy-Tw-aST">
+                        <rect key="frame" x="346" y="20" width="41" height="46"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오후 10시" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3U-kq-b64">
+                        <rect key="frame" x="290.5" y="54" width="40.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="EY3-qW-Jbf" firstAttribute="leading" secondItem="g3U-kq-b64" secondAttribute="trailing" constant="5" id="6TM-4Z-nJv"/>
+                    <constraint firstAttribute="bottom" secondItem="EY3-qW-Jbf" secondAttribute="bottom" constant="10" id="7sx-ke-nzV"/>
+                    <constraint firstItem="gIy-Tw-aST" firstAttribute="bottom" secondItem="EY3-qW-Jbf" secondAttribute="bottom" constant="-10" id="DRf-eJ-Wg1"/>
+                    <constraint firstItem="g3U-kq-b64" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="DoZ-JY-6D8"/>
+                    <constraint firstItem="EY3-qW-Jbf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Icb-Yf-NO0"/>
+                    <constraint firstItem="gIy-Tw-aST" firstAttribute="trailing" secondItem="EY3-qW-Jbf" secondAttribute="trailing" constant="-20" id="XYv-Rh-s7n"/>
+                    <constraint firstItem="gIy-Tw-aST" firstAttribute="leading" secondItem="EY3-qW-Jbf" secondAttribute="leading" constant="10" id="YzA-zF-J5d"/>
+                    <constraint firstAttribute="trailing" secondItem="EY3-qW-Jbf" secondAttribute="trailing" constant="10" id="drR-Fe-y76"/>
+                    <constraint firstItem="gIy-Tw-aST" firstAttribute="bottom" secondItem="g3U-kq-b64" secondAttribute="bottom" id="khk-FM-gSB"/>
+                    <constraint firstItem="gIy-Tw-aST" firstAttribute="top" secondItem="EY3-qW-Jbf" secondAttribute="top" constant="10" id="mOY-P9-TkE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="-34.057971014492757" y="207.58928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="meBubble" width="89" height="74"/>
+    </resources>
+</document>
